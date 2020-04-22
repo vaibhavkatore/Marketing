@@ -1,43 +1,626 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Zilter </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+		<!-- CSS here -->
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+            <link rel="stylesheet" href="assets/css/flaticon.css">
+            <link rel="stylesheet" href="assets/css/slicknav.css">
+            <link rel="stylesheet" href="assets/css/animate.min.css">
+            <link rel="stylesheet" href="assets/css/magnific-popup.css">
+            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+            <link rel="stylesheet" href="assets/css/themify-icons.css">
+            <link rel="stylesheet" href="assets/css/slick.css">
+            <link rel="stylesheet" href="assets/css/nice-select.css">
+            <link rel="stylesheet" href="assets/css/style.css">
+   </head>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+   <body>
+       
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+
+    <header>
+        <!-- Header Start -->
+       <div class="header-area header-transparrent ">
+            <div class="main-header header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/img/logo/logo1111.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8">
+                            <!-- Main-menu -->
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav> 
+                                    <ul id="navigation">    
+                                        <li><a href="index.html"> Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="blog.html">Blog</a>
+                                            <ul class="submenu">
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="single-blog.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Pages</a>
+                                            <ul class="submenu">
+                                                <li><a href="elements.html">Element</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>             
+                        <div class="col-xl-2 col-lg-2 col-md-3">
+                            <div class="header-right-btn f-right d-none d-lg-block">
+                                <a href="#" class="btn header-btn">Contact Us</a>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+        <!-- Header End -->
+    </header>
+
+    <main>
+
+        <!-- Slider Area Start-->
+        <div class="slider-area ">
+            <div class="slider-active">
+                <div class="single-slider slider-height d-flex align-items-center" data-background="assets/img/hero/h1_hero.png">
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-7 col-md-9 ">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInLeft" data-delay=".4s">Let us filter Students for you</h1>
+                                    <p data-animation="fadeInLeft" data-delay=".6s">Now say godbye to all the mannual processes</p>
+                                    <!-- Hero-btn -->
+                                    <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s">
+                                        <a href="industries.html" class="btn hero-btn">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="hero__img d-none d-lg-block" data-animation="fadeInRight" data-delay="1s">
+                                    <img src="assets/img/hero/funnelwithpeople.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slider slider-height d-flex align-items-center" data-background="assets/img/hero/h1_hero.png">
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-7 col-md-9 ">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInLeft" data-delay=".4s">We Collect<br> High Quality Leads</h1>
+                                    <p data-animation="fadeInLeft" data-delay=".6s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravi.</p>
+                                    <!-- Hero-btn -->
+                                    <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s">
+                                        <a href="industries.html" class="btn hero-btn">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="hero__img d-none d-lg-block" data-animation="fadeInRight" data-delay="1s">
+                                    <img src="assets/img/hero/hero_right.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slider Area End-->
+        <!-- What We do start-->
+        <div class="what-we-do we-padding">
+            <div class="container">
+                <!-- Section-tittle -->
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-tittle text-center">
+                            <h2 >What Zilter Do For You​</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-do text-center mb-30">
+                            <div class="do-icon">
+                                <span  class="flaticon-tasks"></span>
+                            </div>
+                            <div class="do-caption">
+                                <h4>Efficiency</h4>
+                                <p>Improves efficiency and accuracy of application assessment</p>
+                            </div>
+                            <div class="do-btn">
+                                <a href="#"><i class="ti-arrow-right"></i> get started</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="single-do active text-center mb-30">
+                            <div class="do-icon">
+                                <span  class="flaticon-social-media-marketing"></span>
+                            </div>
+                            <div class="do-caption">
+                                <h4>Filters</h4>
+                                <p>Filters the best-fit candidates with a higher probability of success</p>
+                            </div>
+                            <div class="do-btn">
+                                <a href="#"><i class="ti-arrow-right"></i> get started</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="single-do text-center mb-30">
+                            <div class="do-icon">
+                                <span  class="flaticon-project"></span>
+                            </div>
+                            <div class="do-caption">
+                                <h4>Standardize</h4>
+                                <p>Benchmarks and standardize the application process</p>
+                            </div>
+                            <div class="do-btn">
+                                <a href="#"><i class="ti-arrow-right"></i> get started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- What We do End-->
+        <!-- We Create Start -->
+     
+        <!-- We Create End -->
+<div class="we-create-area create-padding">
+            <div class="container">
+                <div class="row d-flex align-items-end">
+  <div class="col-lg-6 col-md-12">
+                        <div class="we-create-cap">
+                            <h3>Replace the mannual Application process with Zilter</h3>
+                            <p>We will help you to eliminate the mannual process of the application with our technology</p>
+                            <a href="#" class="btn">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="we-create-img">
+                            <img src="assets/img//service/digitization1.png" alt="">
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+ <!-- We Create Start -->
+        <div class="we-create-area create-padding">
+            <div class="container">
+                <div class="row d-flex align-items-end">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="we-create-cap">
+                            <h3>About Zilter</h3>
+                            <p> With the global increase in the higher education enrollment by 50 million/year to an active base of 200 million students already, universities are constantly looking for quality students who are really the best fit for their institution and programs with regards to their academic grades, personality, and values. Currently, it is a manual and time-consuming process.
+         Zilter is a unique SaaS platform for education institutes to automatically filter the quality student applications by assessing and standardizing the applications to get the best-fit match for their institute based on their own customizable requirements. It automates the whole admissions process along with increased efficiency and accuracy.</p>
+                            <a href="#" class="btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- We Create End -->
+ <!-- We Create Start -->
+        <div class="we-create-area create-padding">
+            <div class="container">
+ <div class="section-tittle text-center">
+                                <h2>How It Works</h2>
+                            </div>
+                <div class="row d-flex align-items-end">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="we-create-img">
+			<h1>^</h1>
+                           <h1>VIDEO FILE HERE</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="we-create-cap">
+                            <h3>Introducing Z-Score</h3>
+                            <p>Designed for HEI (Higher Education Institutes ) to automate student application assessment. Zilter gives a unique score ‘Z score’ to each student profile based on qualitative and quantitative factors of the student. Which then be further refined by the university’s customizable entry requirements on a program or even individual course level. It can also predict the success probability of the student profile on the basis of the Z score of the previous successful graduates. The algorithm considers over 100 different factors and data points to find the best-fit student.
+
+</p>
+                            <a href="#" class="btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- We Create End -->
+        <!-- Generating Start -->
+        <div class="generating-area ">
+            <div class="container">
+                 <!-- Section-tittle -->
+                 <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-tittle text-center">
+                            <h2>PLUGINS OR PLATFORM​​</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-generating d-flex mb-30">
+                            <div class="generating-icon">
+                                <span class="flaticon-chart"></span>
+                            </div>
+                            <div class="generating-cap">
+                                <h4>Hubspot</h4>
+                                <p>HubSpot is a developer and marketer of software products for marketing. </p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-generating d-flex mb-30">
+                            <div class="generating-icon">
+                                <span class="flaticon-social-media-marketing"></span>
+                            </div>
+                            <div class="generating-cap">
+                                <h4>SAP</h4>
+                                <p>SAP makes enterprise software to manage business operations and customer relations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-generating d-flex mb-30">
+                            <div class="generating-icon">
+                                <span class="flaticon-speaker"></span>
+                            </div>
+                            <div class="generating-cap">
+                                <h4>Suger CRM</h4>
+                                <p>SugarCRM produces customer relationship management system includes Social CRM.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-generating d-flex mb-30">
+                            <div class="generating-icon">
+                                <span class="flaticon-growth"></span>
+                            </div>
+                            <div class="generating-cap">
+                                <h4>Salesforce</h4>
+                                <p>Salesforce is a giant of the CRM world. The company’s cloud-based CRM for higher education.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Generating End -->
+        <!--Choose Best start-->
+        <div class="choose-best choose-padding">
+            <div class="container">
+                <!-- Section-tittle -->
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="section-tittle text-center">
+                            <h2>Choose Your Very Best Pricing Plan </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-choose text-center mb-30">
+                            <div class="do-icon">
+                                <span  class="flaticon-growth"></span>
+                            </div>
+                            <div class="do-caption">
+                                <h4>$ 05.00</h4>
+                                <ul>
+                                    <li>DEMO DETAILS</li>
+                                    <li>Social Media Marketing</li>
+                                    <li>10 Free Optimization</li>
+                                    <li>24/7  support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="single-choose active text-center mb-30">
+                            <div class="do-icon">
+                                <span class="flaticon-award"></span>
+                            </div>
+                            <div class="do-caption">
+                                <h4>$ 20.00</h4>
+                                <ul>
+                                    <li>DEMO DETAILS</li>
+                                    <li>Social Media Marketing</li>
+                                    <li>10 Free Optimization</li>
+                                    <li>24/7  support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="single-choose text-center mb-30">
+                            <div class="do-icon">
+                                <span  class="flaticon-project"></span>
+                            </div>
+                            <div class="do-caption">
+                                <h4>$ 30.00</h4>
+                                <ul>
+                                    <li>DEMO DETAILS</li>
+                                    <li>Social Media Marketing</li>
+                                    <li>10 Free Optimization</li>
+                                    <li>24/7  support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Choose Best do End-->
+        <!-- Visit Stuffs Start -->
+        <div class="visit-area fix visite-padding">
+            <div class="container">
+                <!-- Section-tittle -->
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 pr-0">
+                        <div class="section-tittle text-center">
+                            <h2>Visit Some Of Our Awsome Stuffs</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid p-0">
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-visited mb-30">
+                            <div class="visited-img">
+                                <img src="assets/img/visit/visit_1.jpg" alt="">
+                            </div>
+                            <div class="visited-cap">
+                                <h3>Zoom Abroad</h3>
+                                <p>www.zoomabroad.com</p>
+                            </div>
+                        </div>
+                    </div> 
+                     
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-visited mb-30">
+                            <div class="visited-img">
+                                <img src="assets/img/visit/visit_3.jpg" alt="">
+                            </div>
+                            <div class="visited-cap">
+                                <h3>Zapro</h3>
+                                <p>zapro.zilter.io</p>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Visit Stuffs Start -->
+         <!-- Testimonial Start -->
+         <div class="testimonial-area">
+            <div class="container">
+               <div class="testimonial-main">
+                    <!-- Section-tittle -->
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-5  col-md-8 pr-0">
+                            <div class="section-tittle text-center">
+                                <h2>What Client Say About Us</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                            <div class="col-lg-10 col-md-9">
+                                <div class="h1-testimonial-active">
+                                    <!-- Single Testimonial -->
+                                    <div class="single-testimonial text-center">
+                                        <div class="testimonial-caption ">
+                                            <div class="testimonial-top-cap">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                            </div>
+                                            <!-- founder -->
+                                            <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                                <div class="founder-img">
+                                                    <img src="assets/img/testmonial/testimonial.png" alt="">
+                                                </div>
+                                            <div class="founder-text">
+                                                <span>Oliva jems</span>
+                                                <p>UIX designer</p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- Single Testimonial -->
+                                    <div class="single-testimonial text-center">
+                                        <div class="testimonial-caption ">
+                                            <div class="testimonial-top-cap">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                            </div>
+                                            <!-- founder -->
+                                            <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                                <div class="founder-img">
+                                                    <img src="assets/img/testmonial/testimonial.png" alt="">
+                                                </div>
+                                            <div class="founder-text">
+                                                <span>Oliva jems</span>
+                                                <p>UIX designer</p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+       
+        
+
+    </main>
+   <footer>
+
+       <!-- Footer Start-->
+      <div class="footer-main" data-background="assets/img/shape/footer_bg.png">
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-3 col-md-4 col-sm-8">
+                       <div class="single-footer-caption mb-50">
+                         <div class="single-footer-caption mb-30">
+                              <!-- logo -->
+                             <div class="footer-logo">
+                                 <a href="index.html"><img src="assets/img/logo/logo1111.png" alt=""></a>
+                             </div>
+                             <div class="footer-tittle">
+                                 <div class="footer-pera">
+                                     <p class="info1">82, Burgundy Drive<br>UK</p>
+                                     <p class="info2">info@zoomabroad.com</p>
+                                </div>
+                             </div>
+                             <div class="footer-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                            </div>
+                         </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="about.html">Features</a></li>
+                                    <li><a href="single-blog.html">Pricing</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-7">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#"> Sitemap</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Report a bugb</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Core Features</h4>
+                                <ul>
+                                 <li><a href="#">Email Marketing</a></li>
+                                 <li><a href="#"> Offline SEO</a></li>
+                                 <li><a href="#">Social Media Marketing</a></li>
+                                 <li><a href="#">Lead Generation</a></li>
+                                 <li><a href="#"> 24/7 Support</a></li>
+                             </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom aera -->
+        <div class="footer-bottom-area footer-bg">
+            <div class="container">
+                <div class="footer-border">
+                     <div class="row d-flex align-items-center">
+                         <div class="col-xl-12 ">
+                             <div class="footer-copy-right text-center">
+                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+      </div>
+       <!-- Footer End-->
+
+   </footer>
+   
+	<!-- JS here -->
+	
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <!-- Date Picker -->
+        <script src="./assets/js/gijgo.min.js"></script>
+		<!-- One Page, Animated-HeadLin -->
+        <script src="./assets/js/wow.min.js"></script>
+		<script src="./assets/js/animated.headline.js"></script>
+        <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="./assets/js/jquery.scrollUp.min.js"></script>
+        <script src="./assets/js/jquery.nice-select.min.js"></script>
+		<script src="./assets/js/jquery.sticky.js"></script>
+        
+        <!-- contact js -->
+        <script src="./assets/js/contact.js"></script>
+        <script src="./assets/js/jquery.form.js"></script>
+        <script src="./assets/js/jquery.validate.min.js"></script>
+        <script src="./assets/js/mail-script.js"></script>
+        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+        <script src="./assets/js/plugins.js"></script>
+        <script src="./assets/js/main.js"></script>
+        
+    </body>
 </html>
